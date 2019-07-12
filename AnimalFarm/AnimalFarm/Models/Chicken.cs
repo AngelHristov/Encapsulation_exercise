@@ -58,7 +58,7 @@ namespace AnimalFarm.Models
 			}
         }
 
-        public double CalculateProductPerDay()
+        private double CalculateProductPerDay()
         {
             switch (this.Age)
             {
