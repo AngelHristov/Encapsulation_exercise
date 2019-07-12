@@ -6,7 +6,7 @@
     {
         public static void Main()
         {
-            double lenght = double.Parse(Console.ReadLine());
+            double lenght = GetValue();
             double width = GetValue();
             double height = GetValue();
 

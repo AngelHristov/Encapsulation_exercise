@@ -32,7 +32,7 @@
                 {
                     throw new ArgumentException("Width cannot be zero or negative.");
                 }
-                lenght = value;
+                width = value;
             }
         }
 
@@ -46,7 +46,7 @@
                 {
                     throw new ArgumentException("Height cannot be zero or negative.");
                 }
-                lenght = value;
+                height = value;
             }
         }
 
