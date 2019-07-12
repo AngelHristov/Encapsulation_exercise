@@ -16,7 +16,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Lenght cannot be zero or negative.");
+                    throw new ArgumentException("Length cannot be zero or negative.");
                 }
                 length = value;
             }

@@ -6,15 +6,23 @@
     {
         public static void Main()
         {
-            double lenght = GetValue();
-            double width = GetValue();
-            double height = GetValue();
+            try
+            {
+                double lenght = GetValue();
+                double width = GetValue();
+                double height = GetValue();
 
-            Box box = new Box(lenght, width, height);
+                Box box = new Box(lenght, width, height);
 
-            Console.WriteLine($"Surface Area – {GetSurfaceArea(box)}");
-            Console.WriteLine($"Lateral Surface Area – {GetLateralSurfaceArea(box)}");
-            Console.WriteLine($"Volume – {GetVolume(box)}"); 
+                Console.WriteLine($"Surface Area - {GetSurfaceArea(box):F2}");
+                Console.WriteLine($"Lateral Surface Area - {GetLateralSurfaceArea(box):F2}");
+                Console.WriteLine($"Volume - {GetVolume(box):F2}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message); 
+            }
+             
         }
 
         public static double GetVolume(Box box)
