@@ -4,21 +4,21 @@
 
     public class Box
     {
-        private double lenght;
+        private double length;
         private double width;
         private double height;
 
         public double Lenght
         {
-            get => this.lenght;
+            get => this.length;
 
-            set
+            private set
             {
                 if (value <= 0)
                 {
                     throw new ArgumentException("Lenght cannot be zero or negative.");
                 }
-                lenght = value;
+                length = value;
             }
         }
 
@@ -26,7 +26,7 @@
         {
             get => this.width;
 
-            set
+            private set
             {
                 if (value <= 0)
                 {
@@ -40,7 +40,7 @@
         {
             get => this.height;
 
-            set
+            private set
             {
                 if (value <= 0)
                 {
@@ -52,7 +52,7 @@
 
         public Box(double length, double width, double height)
         {
-            this.Lenght = lenght;
+            this.Lenght = length;
             this.Width = width;
             this.Height = height;
         }

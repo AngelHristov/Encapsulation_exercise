@@ -26,14 +26,14 @@
 
         public static double GetLateralSurfaceArea(Box box)
         {
-            double lateralSurfaceArea = 2 * box.Lenght + 2 * box.Width;
+            double lateralSurfaceArea = 2 * box.Width * box.Height + 2 * box.Height * box.Lenght;
 
             return lateralSurfaceArea;
         }
 
         public static double GetSurfaceArea(Box box)
         {
-            double surfaceArea = 2 * box.Lenght + 2 * box.Width + 2 * box.Height;
+            double surfaceArea = 2 * box.Lenght * box.Width + 2 * box.Width * box.Height + 2 * box.Height * box.Lenght;
 
             return surfaceArea;
         }
