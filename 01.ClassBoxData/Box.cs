@@ -52,9 +52,9 @@
 
         public Box(double length, double width, double height)
         {
-            this.lenght = Lenght;
-            this.width = Width;
-            this.height = Height;
+            this.Lenght = lenght;
+            this.Width = width;
+            this.Height = height;
         }
     }
 }

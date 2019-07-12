@@ -10,7 +10,7 @@
             double width = GetValue();
             double height = GetValue();
 
-            var box = new Box(lenght, width, height);
+            Box box = new Box(lenght, width, height);
 
             Console.WriteLine($"Surface Area – {GetSurfaceArea(box)}");
             Console.WriteLine($"Lateral Surface Area – {GetLateralSurfaceArea(box)}");
