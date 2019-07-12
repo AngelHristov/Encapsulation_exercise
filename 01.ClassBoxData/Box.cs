@@ -8,7 +8,7 @@
         private double width;
         private double height;
 
-        public double Lenght
+        public double Length
         {
             get => this.length;
 
@@ -52,7 +52,7 @@
 
         public Box(double length, double width, double height)
         {
-            this.Lenght = length;
+            this.Length = length;
             this.Width = width;
             this.Height = height;
         }

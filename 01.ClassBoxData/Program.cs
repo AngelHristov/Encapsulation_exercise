@@ -27,21 +27,21 @@
 
         public static double GetVolume(Box box)
         {
-            double volume = box.Lenght * box.Width * box.Height;
+            double volume = box.Length * box.Width * box.Height;
 
             return volume;
         }
 
         public static double GetLateralSurfaceArea(Box box)
         {
-            double lateralSurfaceArea = 2 * box.Width * box.Height + 2 * box.Height * box.Lenght;
+            double lateralSurfaceArea = 2 * box.Width * box.Height + 2 * box.Height * box.Length;
 
             return lateralSurfaceArea;
         }
 
         public static double GetSurfaceArea(Box box)
         {
-            double surfaceArea = 2 * box.Lenght * box.Width + 2 * box.Width * box.Height + 2 * box.Height * box.Lenght;
+            double surfaceArea = 2 * box.Length * box.Width + 2 * box.Width * box.Height + 2 * box.Height * box.Length;
 
             return surfaceArea;
         }
